@@ -1,0 +1,134 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("")).click();
+
+        driver.findElement(By.xpath("")).click();
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(interstitial)
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Thread.sleep(500);
+        try {
+            System.out.println("We are in a Try to check Interstitial AD");
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.findElement(xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View")).click();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            System.out.println(">>>> Interstitial Ad cross successfully");
+
+        } catch (Exception e) {
+            System.out.println(">>>> Ad cross failed");
+        }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        (Open App)
+
+        driver.manage().timeouts().implicitlyWait(1500, TimeUnit.SECONDS);
+                Thread.sleep(2500);
+                try {
+                    System.out.println("We are in a Try to check Open App AD");
+                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    driver.findElement(xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[1]/android.view.View")).click();
+                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    System.out.println(">>>> Open App Ad cross successfully");
+
+                } catch (Exception e) {
+                    System.out.println(">>>> Ad cross failed");
+                }
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+              Thread.sleep(2000);
+
+                int start_x=(int)(dim.width*0.5);
+                int start_y=(int)(dim.height*0.8);
+
+                int end_x=(int)(dim.width*0.5);
+                int end_y=(int)(dim.height*0.2);
+                @SuppressWarnings("rawtypes")
+                TouchAction ts=new TouchAction(driver);
+                //ts.tap(x,top_y).moveTo(x,bottom_y).release().perform();
+
+                ts.press(PointOption.point(start_x,start_y)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+                        .moveTo(PointOption.point(end_x,end_y)).release().perform();
+
+                Thread.sleep(2000);
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        WebElement code = driver.findElement(By.id("filemanager.fileexplorer.files.explorer:id/rename_edittext"));
+
+        Random random= new Random();
+        random.setSeed(123456789);
+
+        code.sendKeys(random.toString());
+
+
+        driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
+        Thread.sleep(2000);
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+         WebElement code = driver.findElement(By.id("filemanager.fileexplorer.files.explorer:id/rename_edittext"));
+         code.sendKeys("PAKISTAN");
+
+
+         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                 driver.manage().timeouts().implicitlyWait(700, TimeUnit.SECONDS);
+                 try {
+                     System.out.println(">>>>>>>>> We are In Try ");
+                     Thread.sleep(2000);
+
+                     int start5_x=(int)(dim.width*0.5);
+                     int start5_y=(int)(dim.height*0.2);
+
+                     int end5_x=(int)(dim.width*0.5);
+                     int end5_y=(int)(dim.height*0.8);
+                     @SuppressWarnings("rawtypes")
+                     TouchAction ts5=new TouchAction(driver);
+                     //ts.tap(x,top_y).moveTo(x,bottom_y).release().perform();
+
+                     ts5.press(PointOption.point(start5_x,start5_y)).waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+                             .moveTo(PointOption.point(end5_x,end5_y)).release().perform();
+
+                     Thread.sleep(2000);
+                     System.out.println("Try End");
+                 }
+                 catch (Exception a){
+                     System.out.println("No Need Of Scroller");
+                 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Interstitial Icon Close Xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.widget.Button")
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Interstitial Cross Container Xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Open App Ad Xpath(/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View[1]/android.view.View)
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
